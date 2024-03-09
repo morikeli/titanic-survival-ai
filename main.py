@@ -1,3 +1,4 @@
+from utils.classifiers import titanic_survival_classifier
 import streamlit as st
 
 
@@ -61,12 +62,23 @@ def main():
         )
     
 
+    input_dataset = {
+        'Name': passenger_name,
+        'Pclass': ticket_class,
+        'Gender': gender,
+        'Age': passenger_age,
+        'SibSp': sibling_spouse,
+        'ParCh': parent_child,
+        'Fare': fare,
+        'Embarked': embarking_port,
+    }
+
     submit_btn = st.button(label='Submit', type='primary', use_container_width=True)
 
     if submit_btn:
         st.toast('Form submitted successfully! Wait for response.', icon='✅')
         with st.spinner('Analyzing input data'):
-            pass
+            titanic_survival_classifier(input_dataset)
 
 
 
