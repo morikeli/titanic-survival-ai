@@ -7,7 +7,7 @@
 This is a machine learning model that predicts whether you would have survived the Titanic incident on 15 April 1912. The model uses Random Forest to make prediction. For more details about how I trained the model, click [My machine learning projects](https://github.com/morikeli/ml-projects-arena) and follow the installation guide in README.md You can also click 'titanic-survival-prediction' and view 'titanic-survival-prediction.ipynb' Jupyter notebook.
 
 ## User instructions
-To use the app, click []() and enter data in the input fields provided. Once you are done, click the submit button and wait for response. A message with the outcome results will be displayed below the submit button.
+To use the app, click [link](https://safe-sea-voyage.streamlit.app/) and enter data in the input fields provided. Once you are done, click the submit button and wait for response. A message with the outcome results will be displayed below the submit button.
 
 ## Developer instructions
 Installation instructions
