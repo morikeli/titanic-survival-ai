@@ -21,7 +21,7 @@ def main():
         )
         gender = st.selectbox(
             label='Gender', 
-            options=(None, 'Male', 'Female')
+            options=('Male', 'Female')
         )
         passenger_age = st.number_input(
             label='Age',
