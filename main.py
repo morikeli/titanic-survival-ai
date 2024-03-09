@@ -14,7 +14,11 @@ def main():
     col = st.columns(2)
 
     with col[0]:
-        passenger_name = st.text_input(label='Passenger name', placeholder='Enter your name')
+        passenger_name = st.text_input(
+            label='Passenger name', 
+            placeholder='Enter your name',
+            max_chars=30,
+        )
         gender = st.selectbox(
             label='Gender', 
             options=(None, 'Male', 'Female')
