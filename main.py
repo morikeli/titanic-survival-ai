@@ -18,14 +18,20 @@ def main():
             label='Gender', 
             options=(None, 'Male', 'Female')
         )
+        passenger_age = st.number_input(
+            label='Age',
+            min_value=1,
+            max_value=100,
+            help='Enter your age'
+        )
         sibling_spouse = st.number_input(
             label='Sibling(s)/Spouse(s)',
             help='Any siblings or spouse aboarding the Titanic?',
             min_value=0,
             max_value=10,
         )
-        
-    
+       
+
     with col[1]:
         parent_child = st.number_input(
             label='Parent(s)/Child(ren)',
@@ -41,6 +47,12 @@ def main():
                 ('Second class (middle class)'),
                 ('Third class (lower class)'),
             )
+        )
+        fare = st.number_input(
+            label='Fare',
+            min_value=5,
+            max_value=1000,
+            help="Monetary value is assumed, not exact with the today's value."
         )
         embarking_port = st.selectbox(
             label='Port',
