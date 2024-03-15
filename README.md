@@ -1,4 +1,4 @@
-# Safe Sea Voyage
+# Titanic survival AI prediction 
 
 ## Overview
 
